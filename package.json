@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/unhippo/unhippo.github.io/issues"
   },
-  "homepage": "https://github.com/unhippo/unhippo.github.io#readme",
+  "homepage": "https://unhippo.github.io/unhippo.github.io",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
@@ -29,6 +30,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

@@ -7,7 +7,7 @@ module.exports = {
   // 输出文件
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'build')
   },
   mode: 'development',
   module: {
