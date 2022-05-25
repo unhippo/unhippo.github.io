@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Micang</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body, #container {
+      display: flex;
+      flex: 1
+    }
+  </style>
+<script defer src="bundle.js"></script></head>
+
+<body>
+  <script>
+    var fontSize = document.body.clientWidth / (18.75)
+    document.getElementsByTagName("html")[0].style.fontSize = (fontSize > 18 ? 18 : fontSize) + "px"
+  </script>
+  <div id="container"></div>
+  <!-- <script>
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+  </script> -->
+</body>
+
+</html>
