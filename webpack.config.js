@@ -25,12 +25,12 @@ module.exports = {
     open: true,
     https: true,
     static: {
-      directory: path.join(__dirname, 'public')
+      directory: path.join(__dirname, '')
     }
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "public", "index.html")
+      template: path.resolve(__dirname, "./", "index.html")
     })
   ]
 }
